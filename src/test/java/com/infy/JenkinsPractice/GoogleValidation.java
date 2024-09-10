@@ -15,5 +15,6 @@ public void validateGoogle() {
 	driver.get("https://www.google.co.in/");
 	String name=driver.findElement(By.xpath("//a[@aria-label='Gmail ']")).getText();
 	Assert.assertEquals(name, "Gmail");
+	System.out.println("Completed");
 }
 }
